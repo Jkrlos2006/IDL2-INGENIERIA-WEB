@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 mt-2">
+      <div class="card mt-4" style="text-align: center; color: rgb(15, 114, 60);">
+        <div class="card-body">
+          <div class="card-header">
+            <h5>TABLA DE TAREAS</h5>
+          </div>
+          <table class="table table-bordered mt-2">
+            <thead>
+              <tr>
+                <th style="color: rgb(15, 114, 60);">ID</th>
+                <th style="color: rgb(15, 114, 60);">TAREA</th>
+                <th style="color: rgb(15, 114, 60);">DESCRIPCION</th>
+            </thead>
+            <tbody>
+              <tr *ngFor="let tarea of tareaArray">
+                <td> {{tarea.id}} </td>
+                <td> {{tarea.tarea}} </td>
+                <td> {{tarea.descripcion}} </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
